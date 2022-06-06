@@ -1,18 +1,21 @@
 import "./glass.css";
 import Button from "./Button";
 
-const ToDo = () => {
+const ToDo = (props) => {
 	const onEditClick = () => {
-		console.log("hello world");
+		props.setTodo(props.todo);
+		props.openModal();
+		props.setIsEdit(true);
+		props.setEditID(props.id);
 	};
 
 	const onDeleteClick = () => {
-		console.log("bye world");
+		props.onPressDelete(props.id);
 	};
 
 	return (
 		<div className=' py-10 px-5 mx-5 my-10 glass'>
-			<div className='text-black py-10'>Hello world</div>
+			<div className='text-black py-10'>{props.task}</div>
 			<hr />
 			<div className='text-gray-500 text-bold pt-5'>Creator Name</div>
 			<div className='text-gray-500 text-bold '>Created At</div>

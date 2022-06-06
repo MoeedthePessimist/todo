@@ -4,6 +4,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color: black;
 }
 
 .todo-data {
@@ -15,7 +16,7 @@
 	justify-content: center;
 	/* align-items: center; */
 	position: relative;
-	/* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .todo-input {
@@ -23,7 +24,7 @@
 	background: transparent;
 	border: none;
 	outline: none;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid black;
 	color: transparent;
 }
 
@@ -34,11 +35,11 @@
 
 .todo-input:focus ~ .todo-label {
 	transform: translateY(-80%) !important;
-	color: #ffff1c;
+	color: rgb(47, 47, 47);
 	transition: all 0.3s ease-in-out !important;
 }
 .todo-input:focus {
-	border-bottom-color: #ffff1c;
+	border-bottom-color: rgb(47, 47, 47);
 	transition: all 0.3s ease-in-out !important;
 	color: #000;
 }
