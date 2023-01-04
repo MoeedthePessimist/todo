@@ -1,13 +1,11 @@
-import Navbar from "./components/Navbar";
-import TodoContainer from "./components/TodoContainer";
+import Container from "./pages/Container";
 
 const App = () => {
-	return (
-		<>
-			<Navbar />
-			<TodoContainer />
-		</>
-	);
+  return (
+    <>
+      <Container />
+    </>
+  );
 };
 
 export default App;
